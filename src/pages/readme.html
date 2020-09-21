@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://www.holbertonschool.com/level2/school.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Astronomy Picture of the Day</title>
+  </head>
+
+  <body class="works_on_smartphone">
+    <!-- Start header -->
+    <header class="style-txt">
+      <a href="index.html" class="logo neon">Apod</a>
+      <nav class="style-txt">
+        <ul>
+          <li><a class="link" href="index.html">Home</a></li>
+          <li><a class="link" href="tweets.html">Tweets</a></li>
+          <li><a class="link" href="gallery.html">Gallery</a></li>
+          <li><a class="link nav-active" href="readme.html">Readme</a></li>
+        </ul>
+      </nav>
+      <div class="dark-mode">
+        <button class="switch">
+          <span
+            ><img
+              src="https://res.cloudinary.com/dargjxuh5/image/upload/v1597783110/sun_yeamcv.svg"
+              class="darkModeIcon"
+              alt="Sun image darkmode"
+          /></span>
+          <span
+            ><img
+              src="https://res.cloudinary.com/dargjxuh5/image/upload/v1597783144/moon_dfu0l6.svg"
+              class="darkModeIcon"
+              alt="Moon image darkmode"
+          /></span>
+        </button>
+      </div>
+      <div>
+        <div id="fb-root"></div>
+        <!-- Share -->
+        <div class="share-button">
+          <span>Share me</span>
+          <a
+            href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2F3.90.190.82%2F&amp;src=sdkpreparse"
+            data-href="http://3.90.190.82/"
+            target="_blank"
+            ><i class="fab fa-facebook-f"></i
+          ></a>
+          <a
+            href="https://twitter.com/share?ref_src=twsrc%5Etfw"
+            data-text="Hello World! I saw this done by a Holberton applicant"
+            data-hashtags="#HelloWorld"
+            data-related="@HolbertonCOL,@holbertonschool"
+            data-show-count="false"
+            target="_blank"
+            ><i class="fab fa-twitter"></i
+          ></a>
+        </div>
+      </div>
+    </header>
+    <!-- End header -->
+
+    <!-- Start main -->
+    <main>
+      <article class="style-txt container">
+        <h2 class="mt">README</h2>
+
+        <p>Here I will explain how this mini project works</p>
+
+        <p class="note">
+          <strong>NOTE: </strong
+          ><a href="https://validator.w3.org/">validator w3</a> throws an error
+          due to a format used in the date input. I can't correct it because I
+          need external libraries and Holberton doesn't allow it. This does not
+          affect its use in modern browsers
+        </p>
+
+        <p>Please let me your comments in sidebar Disqus...</p>
+
+        <h2>Home page</h2>
+
+        <p class="note">
+          If you prefer to see the page in dark mode, press the toggle at the
+          top
+        </p>
+
+        <h3>Section 1 & 2</h3>
+
+        <p>
+          This connects to NASA’s Apod API. Bring an <strong>image</strong> of
+          the day its <strong>author</strong>, the <strong>date</strong> and the
+          <strong>tile</strong>. Section 2 brings the description related to the
+          image. You can change the dynamic data by choosing a new date in the
+          entry at the top of the page.
+        </p>
+
+        <p class="note">
+          <strong>Note:</strong>If the chosen date does not bring information,
+          it is because NASA does not have information on that specific field
+          for that date, the page will ask you to change the day to display
+          information. Remember that this is connected to NASA and the data
+          shown depends on them feeding the information on the chosen date.
+          <br />
+
+          By default the page brings current information and every day it
+          changes dynamically. You cannot choose future dates because they are
+          images of the day and until <strong>06-20-1995</strong>, the day the
+          first image was published
+        </p>
+
+        <h3>Section 3</h3>
+
+        <p>
+          The third part of the page connects with the YouTube API and brings
+          the last 4 videos that the NASA channel published.
+        </p>
+
+        <p class="note">
+          <strong>Note:</strong> Every time a new video is published the page
+          will automatically bring it up
+        </p>
+
+        <h2>Tweets</h2>
+
+        <p>
+          This is normal as requested by the test since the Twitter API is very
+          <strong>rare</strong> and I cannot consume it from the browser
+        </p>
+
+        <h3>Gallery</h3>
+
+        <p>
+          This page also connects with NASA and obtains images of search
+          parameters such as:
+          <strong>Iss, Neowise, Mars, Sun, Moon, etc …</strong>
+        </p>
+
+        <p class="note">
+          <strong>Note:</strong> Due to the large amount of data I had to
+          restrict the images of the petition to only the year
+          <strong>2020</strong><br />
+          By default this starts with the search for
+          <strong>Neowise comet</strong>
+        </p>
+
+        <p>
+          The possibilities of keywords are almost infinite so I can’t list
+          them, try using names of
+          <strong>planets, comets, continents, countries, stars etc …</strong>
+        </p>
+      </article>
+    </main>
+    <!-- End main -->
+
+    <!-- Start footer -->
+    <footer class="style-txt">
+      <div class="footer-content">
+        <p class="credits">
+          Made by Arturo Dangond for
+        </p>
+        <a
+          class="link-credits"
+          href="https://www.holbertonschool.com"
+          target="_blank"
+          ><img
+            src="https://www.holbertonschool.com/holberton-logo.png"
+            alt="logo holberton"
+        /></a>
+      </div>
+    </footer>
+    <!-- End footer -->
+
+    <!-- Font awesome CDN -->
+    <script
+      defer
+      src="https://use.fontawesome.com/releases/v5.14.0/js/all.js"
+      integrity="sha384-3Nqiqht3ZZEO8FKj7GR1upiI385J92VwWNLj+FqHxtLYxd9l+WYpeqSOrLh0T12c"
+      crossorigin="anonymous"
+    ></script>
+    <!-- JS SDK Facebook -->
+    <script
+      async
+      defer
+      crossorigin="anonymous"
+      src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v8.0"
+      nonce="bQVXrVs2"
+    ></script>
+    <!-- JS Twitter -->
+    <script async src="https://platform.twitter.com/widgets.js"></script>
+    <!-- Local JS -->
+    <script src="api.js"></script>
+  </body>
+</html>
