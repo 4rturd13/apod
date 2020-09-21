@@ -396,11 +396,11 @@ footer {
 .credits {
   font-weight: 500;
   color: var(--txt-dark);
-  /* margin-top: 18px; */
+  margin-top: 18px;
   font-size: small;
 }
 .footer-content a img {
-  width: 96px;
+  width: 80px;
 }
 
 /* querys */
