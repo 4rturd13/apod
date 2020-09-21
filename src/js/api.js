@@ -1,4 +1,4 @@
-document.addEventListener("DOMContentLoaded", function (event) {
+document.addEventListener("DOMContentLoaded", function () {
   const btnSwitch = document.querySelector(".switch");
 
   btnSwitch.addEventListener("click", () => {

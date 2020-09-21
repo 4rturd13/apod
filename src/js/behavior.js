@@ -25,16 +25,16 @@ form.addEventListener("submit", function (e) {
   getDataNasa(date);
 });
 
-const youTubeApiKey = "AIzaSyB8fs3-LxKbmoNvgknMisH-bgdXfpGzlUw";
-const channelId = "UCLA_DiR1FfKNvjuUpBHmylQ";
-const totalResult = 4;
+const youTubeApiKey = process.env.YT_API_KEY;
+const channelId = process.env.YT_CH_ID;
+const totalResult = process.env.YT_TOTAL_RESULT;
 const urlYouTubeApi = `https://www.googleapis.com/youtube/v3/search?key=${youTubeApiKey}&channelId=${channelId}&part=snippet,id&order=date&maxResults=${totalResult}`;
 
 const getDataNasa = (date) => {
   const sectionOne = document.querySelector("#section-1");
   const sectionTwo = document.querySelector("#section-2");
 
-  const keyAdpodApi = "ezutVdJrMW4WzgfuAw1CeMDssN5KtBbAW6flgEw7";
+  const keyAdpodApi = process.env.APOD_KEY;
   const urlApodApi = `https://api.nasa.gov/planetary/apod?date=${date}&api_key=${keyAdpodApi}`;
   fetch(urlApodApi)
     .then((data) => data.json())

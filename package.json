@@ -1,0 +1,23 @@
+{
+  "name": "holberton",
+  "version": "1.0.0",
+  "description": "- connect api apod nasa to get imgage of the day - connect api apod nasa to get images related to a specific topic like NEOWISE, MARS, SUN MOON, ISS etc... - connect youtube nasa channel to get 4 last most recent videos",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/4rturd13/apod.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/4rturd13/apod/issues"
+  },
+  "homepage": "https://github.com/4rturd13/apod#readme",
+  "dependencies": {
+    "dotenv": "^8.2.0"
+  }
+}
